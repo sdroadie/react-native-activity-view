@@ -94,7 +94,7 @@ RCT_EXPORT_METHOD(show:(NSDictionary *)args)
     NSMutableArray *shareObject = [NSMutableArray array];
     NSString *text = args[@"text"];
     NSURL *url = args[@"url"];
-    NSObject *file = args[@"file"];
+    NSString *file = args[@"file"];
     NSArray *activitiesToExclude = args[@"exclude"];
 
     // Return if no args were passed
@@ -116,7 +116,7 @@ RCT_EXPORT_METHOD(show:(NSDictionary *)args)
     }
 
     if (file) {
-	NSUrl *localFile = [NSUrl fileURLWithPath:file];
+	NSURL *localFile = [NSURL fileURLWithPath:file];
         [shareObject addObject:localFile];
     }
 
