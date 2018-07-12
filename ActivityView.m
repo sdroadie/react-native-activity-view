@@ -116,7 +116,8 @@ RCT_EXPORT_METHOD(show:(NSDictionary *)args)
     }
 
     if (file) {
-        [shareObject addObject:file];
+	NSUrl *localFile = [NSUrl fileURLWithPath:file];
+        [shareObject addObject:localFile];
     }
 
 
