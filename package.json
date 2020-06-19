@@ -10,7 +10,7 @@
   "main": "ActivityView",
   "repository": {
     "type": "git",
-    "url": "https://github.com/naoufal/react-native-activity-view.git"
+    "url": "https://github.com/smartlogic/react-native-activity-view"
   },
   "keywords": [
     "react-native",
